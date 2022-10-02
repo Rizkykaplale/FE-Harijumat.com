@@ -34,8 +34,15 @@ function Class(props) {
               <div className="card-body">
                 <h5 className="card-title">Kelas Web-Developer</h5>
                 <p className="card-text fst-italic">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ipsum, alias dolorum reprehenderit obcaecati doloribus cum a itaque quibusdam atque.</p>
-                <a className="btn btn-success" href="/login">
-                  Ikuti kelas &raquo;
+                <p class="badge bg-danger text-wrap ms-5 mx-3">
+                  Disc 50%<span className="fw-bold px-1">Rp.1.500.000</span>
+                  <span className="text-decoration-line-through">Rp.3000.000</span>
+                </p>
+                <a className="btn btn-success px-4 mx-3" href="/login">
+                  Ikuti kelas
+                </a>
+                <a className="btn btn-outline-success me-2" href="/contact">
+                  Info lebih lanjut
                 </a>
               </div>
             </div>
@@ -46,8 +53,15 @@ function Class(props) {
               <div className="card-body">
                 <h5 className="card-title">Kelas UI/UX</h5>
                 <p className="card-text fst-italic">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ipsum, alias dolorum reprehenderit obcaecati doloribus cum a itaque quibusdam atque.</p>
-                <a className="btn btn-success" href="/login">
-                  Ikuti kelas &raquo;
+                <p class="badge bg-danger text-wrap ms-5 mx-3">
+                  Disc 50%<span className="fw-bold px-1">Rp.1.500.000</span>
+                  <span className="text-decoration-line-through">Rp.3000.000</span>
+                </p>
+                <a className="btn btn-success px-4 mx-3" href="/login">
+                  Ikuti kelas
+                </a>
+                <a className="btn btn-outline-success me-2" href="/contact">
+                  Info lebih lanjut
                 </a>
               </div>
             </div>
@@ -58,8 +72,15 @@ function Class(props) {
               <div className="card-body">
                 <h5 className="card-title">Kelas Data science</h5>
                 <p className="card-text fst-italic">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ipsum, alias dolorum reprehenderit obcaecati doloribus cum a itaque quibusdam atque.</p>
-                <a className="btn btn-success" href="/login">
-                  Ikuti kelas &raquo;
+                <p class="badge bg-danger text-wrap ms-5 mx-3">
+                  Disc 50%<span className="fw-bold px-1">Rp.1.500.000</span>
+                  <span className="text-decoration-line-through">Rp.3000.000</span>
+                </p>
+                <a className="btn btn-success px-4 mx-3" href="/login">
+                  Ikuti kelas
+                </a>
+                <a className="btn btn-outline-success me-2" href="/contact">
+                  Info lebih lanjut
                 </a>
               </div>
             </div>
@@ -70,8 +91,15 @@ function Class(props) {
               <div className="card-body">
                 <h5 className="card-title">Kelas Data Analyst</h5>
                 <p className="card-text fst-italic">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ipsum, alias dolorum reprehenderit obcaecati doloribus cum a itaque quibusdam atque.</p>
-                <a className="btn btn-success" href="/login">
-                  Ikuti kelas &raquo;
+                <p class="badge bg-danger text-wrap ms-5 mx-3">
+                  Disc 50%<span className="fw-bold px-1">Rp.1.500.000</span>
+                  <span className="text-decoration-line-through">Rp.3000.000</span>
+                </p>
+                <a className="btn btn-success px-4 mx-3" href="/login">
+                  Ikuti kelas
+                </a>
+                <a className="btn btn-outline-success me-2" href="/contact">
+                  Info lebih lanjut
                 </a>
               </div>
             </div>
@@ -82,8 +110,15 @@ function Class(props) {
               <div className="card-body">
                 <h5 className="card-title">Kelas Product Management</h5>
                 <p className="card-text fst-italic">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ipsum, alias dolorum reprehenderit obcaecati doloribus cum a itaque quibusdam atque.</p>
-                <a className="btn btn-success" href="/login">
-                  Ikuti kelas &raquo;
+                <p class="badge bg-danger text-wrap ms-5 mx-3">
+                  Disc 50%<span className="fw-bold px-1">Rp.1.500.000</span>
+                  <span className="text-decoration-line-through">Rp.3000.000</span>
+                </p>
+                <a className="btn btn-success px-4 mx-3" href="/login">
+                  Ikuti kelas
+                </a>
+                <a className="btn btn-outline-success me-2" href="/contact">
+                  Info lebih lanjut
                 </a>
               </div>
             </div>
@@ -94,11 +129,16 @@ function Class(props) {
               <div className="card-body">
                 <h5 className="card-title">Kelas Mobile Developer</h5>
                 <p className="card-text fst-italic">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ipsum, alias dolorum reprehenderit obcaecati doloribus cum a itaque quibusdam atque.</p>
-                <p>
-                  <a className="btn btn-success" href="/login">
-                    Ikuti kelas &raquo;
-                  </a>
+                <p class="badge bg-danger text-wrap ms-5 mx-3">
+                  Disc 50%<span className="fw-bold px-1">Rp.1.500.000</span>
+                  <span className="text-decoration-line-through">Rp.3000.000</span>
                 </p>
+                <a className="btn btn-success px-4 mx-3" href="/login">
+                  Ikuti kelas
+                </a>
+                <a className="btn btn-outline-success me-2" href="/contact">
+                  Info lebih lanjut
+                </a>
               </div>
             </div>
           </div>
