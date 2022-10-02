@@ -13,24 +13,28 @@ function Login() {
             </div>
             <div className="col-md-10 mx-auto col-lg-5">
               <h1 className="text-center fw-bold">Sign In</h1>
-              <form className="p-4 p-md-5 border rounded-3 bg-dark">
-                <div className="form-floating mb-3">
+              <form className="p-2 p-md-5 border rounded-3 bg-dark">
+                <div className="form-floating">
                   <input type="email" className="form-control" id="floatingInput" placeholder="name@example.com" />
                   <label for="floatingInput">Email address</label>
                 </div>
-                <div className="form-floating mb-5 mt-5">
+                <div className="form-floating mb-2 mt-4">
                   <input type="password" className="form-control" id="floatingPassword" placeholder="Password" />
                   <label for="floatingPassword">Password</label>
                 </div>
-                <div className="checkbox mb-5 mt-5 text-white">
+                <div className="checkbox my-3 text-white">
                   <label>
                     <input type="checkbox" value="remember-me" /> Remember me
                   </label>
                 </div>
-                <button className="w-100 btn btn-lg btn-outline-success" type="submit">
+                <button className="w-100 btn btn-lg btn-outline-success mt-2" type="submit">
                   Sign In
                 </button>
-                <hr className="my-2" />
+                <p className="text-center text-white pt-3">Belum memiliki akun?</p>
+                <hr className="my-1" />
+                <a className="w-100 btn btn-lg btn-outline-success pt-1" href="/regist" type="submit">
+                  Sign Up
+                </a>
               </form>
             </div>
           </div>

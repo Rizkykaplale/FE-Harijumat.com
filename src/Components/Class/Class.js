@@ -34,7 +34,7 @@ function Class(props) {
               <div className="card-body">
                 <h5 className="card-title">Kelas Web-Developer</h5>
                 <p className="card-text fst-italic">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ipsum, alias dolorum reprehenderit obcaecati doloribus cum a itaque quibusdam atque.</p>
-                <a className="btn btn-success" href="#">
+                <a className="btn btn-success" href="/login">
                   Ikuti kelas &raquo;
                 </a>
               </div>
@@ -46,7 +46,7 @@ function Class(props) {
               <div className="card-body">
                 <h5 className="card-title">Kelas UI/UX</h5>
                 <p className="card-text fst-italic">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ipsum, alias dolorum reprehenderit obcaecati doloribus cum a itaque quibusdam atque.</p>
-                <a className="btn btn-success" href="#">
+                <a className="btn btn-success" href="/login">
                   Ikuti kelas &raquo;
                 </a>
               </div>
@@ -58,7 +58,7 @@ function Class(props) {
               <div className="card-body">
                 <h5 className="card-title">Kelas Data science</h5>
                 <p className="card-text fst-italic">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ipsum, alias dolorum reprehenderit obcaecati doloribus cum a itaque quibusdam atque.</p>
-                <a className="btn btn-success" href="#">
+                <a className="btn btn-success" href="/login">
                   Ikuti kelas &raquo;
                 </a>
               </div>
@@ -70,7 +70,7 @@ function Class(props) {
               <div className="card-body">
                 <h5 className="card-title">Kelas Data Analyst</h5>
                 <p className="card-text fst-italic">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ipsum, alias dolorum reprehenderit obcaecati doloribus cum a itaque quibusdam atque.</p>
-                <a className="btn btn-success" href="#">
+                <a className="btn btn-success" href="/login">
                   Ikuti kelas &raquo;
                 </a>
               </div>
@@ -82,7 +82,7 @@ function Class(props) {
               <div className="card-body">
                 <h5 className="card-title">Kelas Product Management</h5>
                 <p className="card-text fst-italic">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ipsum, alias dolorum reprehenderit obcaecati doloribus cum a itaque quibusdam atque.</p>
-                <a className="btn btn-success" href="#">
+                <a className="btn btn-success" href="/login">
                   Ikuti kelas &raquo;
                 </a>
               </div>
@@ -95,7 +95,7 @@ function Class(props) {
                 <h5 className="card-title">Kelas Mobile Developer</h5>
                 <p className="card-text fst-italic">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ipsum, alias dolorum reprehenderit obcaecati doloribus cum a itaque quibusdam atque.</p>
                 <p>
-                  <a className="btn btn-success" href="#">
+                  <a className="btn btn-success" href="/login">
                     Ikuti kelas &raquo;
                   </a>
                 </p>

@@ -3,24 +3,6 @@ import contactUs from "../../Image/contact-us.jpg";
 function Contact(props) {
   return (
     <>
-      {/* <main className="form-signin">
-        <form>
-          <h1 className="h1 mb-3 fw-bold text-center">Contact Us</h1>
-
-          <div className="form-floating">
-            <input type="email" className="form-control" id="floatingInput" placeholder="name@example.com" />
-            <label for="floatingInput">Email address</label>
-          </div>
-          <div className="form-floating mt-1">
-            <textarea className="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
-            <label for="floatingTextarea">Comments</label>
-          </div>
-          <button className="w-100 btn btn-lg btn-success my-3" type="submit">
-            Submit
-          </button>
-        </form>
-      </main> */}
-
       <section>
         <div className="container py-5">
           <div className="card shadow">
@@ -34,8 +16,8 @@ function Contact(props) {
                     <input type="text" className="form-control" placeholder="Enter your username" />
                   </div>
                   <div className="form-group py-3">
-                    <label className="mb-1">Email</label>
-                    <input type="text" className="form-control" placeholder="example123@gmail.com" />
+                    <label className="mb-1">Phone Number</label>
+                    <input type="text" className="form-control" placeholder="081234567890" />
                   </div>
                   <div className="form-group">
                     <label className="mb-1">Message</label>

@@ -152,6 +152,59 @@ function Dashboard(props) {
           </tbody>
         </table>
       </div>
+      
+      {/* lulusan harijumat */}
+<div className="container pt-3 mt-5">
+        <div className="row">
+          <h1 className="mb-5 text-capitalize text-center">Lulusan harijumat.com telah bekerja di:</h1>
+          <div className="col text-center m-3">
+            <img src="https://www.harisenin.com/_next/image?url=https%3A%2F%2Fcdn.harisenin.com%2Fpublic%2Fassets%2Flogos%2Flogo_air-asia-2.png&w=256&q=75" alt="" />
+          </div>
+          <div className="col text-center m-3">
+            <img src="https://www.harisenin.com/_next/image?url=https%3A%2F%2Fcdn.harisenin.com%2Fpublic%2Fassets%2Flogos%2Flogo_bukalapak-2.png&w=256&q=75" alt="" />
+          </div>
+          <div className="col text-center m-3">
+            <img src="https://www.harisenin.com/_next/image?url=https%3A%2F%2Fcdn.harisenin.com%2Fpublic%2Fassets%2Flogos%2Flogo_shopee-2.png&w=256&q=75" alt="" />
+          </div>
+          <div className="col text-center m-3">
+            <img src="https://www.harisenin.com/_next/image?url=https%3A%2F%2Fcdn.harisenin.com%2Fpublic%2Fassets%2Flogos%2Flogo_unilever-2.png&w=256&q=75" alt="" />
+          </div>
+          <div className="col text-center m-3">
+            <img src="https://www.harisenin.com/_next/image?url=https%3A%2F%2Fcdn.harisenin.com%2Fpublic%2Fassets%2Flogos%2Flogo_gojek-3.png&w=256&q=75" alt="" />
+          </div>
+          <div className="col text-center m-3">
+            <img src="https://www.harisenin.com/_next/image?url=https%3A%2F%2Fcdn.harisenin.com%2Fpublic%2Fassets%2Flogos%2Flogo_bri-3.png&w=256&q=75" alt="" />
+          </div>
+          <div className="col text-center m-3">
+            <img src="https://www.harisenin.com/_next/image?url=https%3A%2F%2Fcdn.harisenin.com%2Fpublic%2Fassets%2Flogos%2Flogo_nestle-3.png&w=256&q=75" alt="" />
+          </div>
+          <div className="col text-center m-3">
+            <img src="https://www.harisenin.com/_next/image?url=https%3A%2F%2Fcdn.harisenin.com%2Fpublic%2Fassets%2Flogos%2Flogo_mandiri-sekuritas-2.png&w=256&q=75" alt="" />
+          </div>
+          <div className="col text-center m-3">
+            <img src="https://www.harisenin.com/_next/image?url=https%3A%2F%2Fcdn.harisenin.com%2Fpublic%2Fassets%2Flogos%2Flogo_pwc-2.png&w=256&q=75" alt="" />
+          </div>
+          <div className="col text-center m-3">
+            <img src="https://www.harisenin.com/_next/image?url=https%3A%2F%2Fcdn.harisenin.com%2Fpublic%2Fassets%2Flogos%2Flogo_telkom-indonesia_2.png&w=256&q=75" alt="" />
+          </div>
+          <div className="col text-center m-3">
+            <img src="https://www.harisenin.com/_next/image?url=https%3A%2F%2Fcdn.harisenin.com%2Fpublic%2Fassets%2Flogos%2Flogo_viu-2.png&w=256&q=75" alt="" />
+          </div>
+          <div className="col text-center m-3">
+            <img src="https://www.harisenin.com/_next/image?url=https%3A%2F%2Fcdn.harisenin.com%2Fpublic%2Fassets%2Flogos%2Flogo_link-aja-2.png&w=256&q=75" alt="" />
+          </div>
+          <div className="col text-center m-3">
+            <img src="https://www.harisenin.com/_next/image?url=https%3A%2F%2Fcdn.harisenin.com%2Fpublic%2Fassets%2Flogos%2Flogo_ey-3.png&w=256&q=75" alt="" />
+          </div>
+          <div className="col text-center m-3">
+            <img src="https://www.harisenin.com/_next/image?url=https%3A%2F%2Fcdn.harisenin.com%2Fpublic%2Fassets%2Flogos%2Flogo_jnt-2.png&w=256&q=75" alt="" />
+          </div>
+          <div className="col text-center m-3">
+            <img src="https://www.harisenin.com/_next/image?url=https%3A%2F%2Fcdn.harisenin.com%2Fpublic%2Fassets%2Flogos%2Flogo_astra-2.png&w=256&q=75" alt="" />
+          </div>
+        </div>
+      </div>
+      <br />
     </>
   );
 }
