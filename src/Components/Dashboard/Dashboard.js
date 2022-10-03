@@ -11,22 +11,6 @@ import testi3 from "../../Image/testi3.jpg";
 function Dashboard(props) {
   return (
     <>
-      {/* INI JUMBOTRON */}
-      {/* <div className="p-5 mb-4 bg-light rounded-3 latarbelakang">
-        <div className="container-fluid py-5">
-          <h1 className="display-5 fw-bold">
-            Raih Karir Impian <br /> Walau Sesat di Jalan
-          </h1>
-          <p className="col-md-8 fs-5 mt-5">
-            Kuasai skill dan dapatkan pekerjaan impianmu. Sudah <span className="fw-bold">2380</span> alumni berhasil meraih karir impian mereka. Apabila setelah lulus kamu belum bekerja dalam 365 hari, kamu berhak mendapatkan{" "}
-            <span className="fw-bold">refund up to 110%</span> investasimu.
-          </p>
-          <button className="btn btn-dark btn-lg mt-3" type="button">
-            Temukan kelas terbaikmu !
-          </button>
-        </div>
-      </div> */}
-
       {/* Hero Banner */}
       <div className="container col-xxl-8 px-4 pb-5">
         <div className="row flex-lg-row-reverse align-items-center g-5 py-1">

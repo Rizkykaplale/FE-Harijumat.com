@@ -8,6 +8,7 @@ import Contact from "./Components/Contact/Contact";
 import Login from "./Components/Login/Login";
 import Regist from "./Components/Regist/Regist";
 import Footer from "./Components/Footer/Footer";
+import Checkout from "./Components/Checkout/Checkout";
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/login" element={<Login />} />
           <Route path="/regist" element={<Regist />} />
+          <Route path="/checkout" element={<Checkout />} />
         </Routes>
       </div>
       <Footer />

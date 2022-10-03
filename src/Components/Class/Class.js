@@ -36,9 +36,9 @@ function Class(props) {
                 <p className="card-text fst-italic">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ipsum, alias dolorum reprehenderit obcaecati doloribus cum a itaque quibusdam atque.</p>
                 <p class="badge bg-danger text-wrap ms-5 mx-3">
                   Disc 50%<span className="fw-bold px-1">Rp.1.500.000</span>
-                  <span className="text-decoration-line-through">Rp.3000.000</span>
+                  <span className="text-decoration-line-through">Rp.3.000.000</span>
                 </p>
-                <a className="btn btn-success px-4 mx-3" href="/login">
+                <a className="btn btn-success px-4 mx-3" href="/Checkout">
                   Ikuti kelas
                 </a>
                 <a className="btn btn-outline-success me-2" href="/contact">
@@ -55,9 +55,9 @@ function Class(props) {
                 <p className="card-text fst-italic">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ipsum, alias dolorum reprehenderit obcaecati doloribus cum a itaque quibusdam atque.</p>
                 <p class="badge bg-danger text-wrap ms-5 mx-3">
                   Disc 50%<span className="fw-bold px-1">Rp.1.500.000</span>
-                  <span className="text-decoration-line-through">Rp.3000.000</span>
+                  <span className="text-decoration-line-through">Rp.3.000.000</span>
                 </p>
-                <a className="btn btn-success px-4 mx-3" href="/login">
+                <a className="btn btn-success px-4 mx-3" href="/Checkout">
                   Ikuti kelas
                 </a>
                 <a className="btn btn-outline-success me-2" href="/contact">
@@ -74,9 +74,9 @@ function Class(props) {
                 <p className="card-text fst-italic">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ipsum, alias dolorum reprehenderit obcaecati doloribus cum a itaque quibusdam atque.</p>
                 <p class="badge bg-danger text-wrap ms-5 mx-3">
                   Disc 50%<span className="fw-bold px-1">Rp.1.500.000</span>
-                  <span className="text-decoration-line-through">Rp.3000.000</span>
+                  <span className="text-decoration-line-through">Rp.3.000.000</span>
                 </p>
-                <a className="btn btn-success px-4 mx-3" href="/login">
+                <a className="btn btn-success px-4 mx-3" href="/Checkout">
                   Ikuti kelas
                 </a>
                 <a className="btn btn-outline-success me-2" href="/contact">
@@ -93,9 +93,9 @@ function Class(props) {
                 <p className="card-text fst-italic">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ipsum, alias dolorum reprehenderit obcaecati doloribus cum a itaque quibusdam atque.</p>
                 <p class="badge bg-danger text-wrap ms-5 mx-3">
                   Disc 50%<span className="fw-bold px-1">Rp.1.500.000</span>
-                  <span className="text-decoration-line-through">Rp.3000.000</span>
+                  <span className="text-decoration-line-through">Rp.3.000.000</span>
                 </p>
-                <a className="btn btn-success px-4 mx-3" href="/login">
+                <a className="btn btn-success px-4 mx-3" href="/Checkout">
                   Ikuti kelas
                 </a>
                 <a className="btn btn-outline-success me-2" href="/contact">
@@ -112,9 +112,9 @@ function Class(props) {
                 <p className="card-text fst-italic">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ipsum, alias dolorum reprehenderit obcaecati doloribus cum a itaque quibusdam atque.</p>
                 <p class="badge bg-danger text-wrap ms-5 mx-3">
                   Disc 50%<span className="fw-bold px-1">Rp.1.500.000</span>
-                  <span className="text-decoration-line-through">Rp.3000.000</span>
+                  <span className="text-decoration-line-through">Rp.3.000.000</span>
                 </p>
-                <a className="btn btn-success px-4 mx-3" href="/login">
+                <a className="btn btn-success px-4 mx-3" href="/Checkout">
                   Ikuti kelas
                 </a>
                 <a className="btn btn-outline-success me-2" href="/contact">
@@ -131,9 +131,9 @@ function Class(props) {
                 <p className="card-text fst-italic">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ipsum, alias dolorum reprehenderit obcaecati doloribus cum a itaque quibusdam atque.</p>
                 <p class="badge bg-danger text-wrap ms-5 mx-3">
                   Disc 50%<span className="fw-bold px-1">Rp.1.500.000</span>
-                  <span className="text-decoration-line-through">Rp.3000.000</span>
+                  <span className="text-decoration-line-through">Rp.3.000.000</span>
                 </p>
-                <a className="btn btn-success px-4 mx-3" href="/login">
+                <a className="btn btn-success px-4 mx-3" href="/Checkout">
                   Ikuti kelas
                 </a>
                 <a className="btn btn-outline-success me-2" href="/contact">
