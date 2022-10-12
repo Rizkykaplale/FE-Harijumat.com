@@ -44,6 +44,7 @@ function Regist(props) {
           </div>
         </div>
         {/* ini nyoba push github */}
+        {/* percobaan push branch cabang1 */}
       </div>
     </>
   );
