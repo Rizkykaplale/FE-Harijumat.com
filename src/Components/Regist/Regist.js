@@ -43,6 +43,7 @@ function Regist(props) {
             </div>
           </div>
         </div>
+        {/* ini nyoba push github */}
       </div>
     </>
   );
