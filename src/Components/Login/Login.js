@@ -1,40 +1,89 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Login.css";
 import signin from "../../Image/signin.jpg";
+
+
 function Login() {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+   
+    fetch("http://localhost:3001/test", {
+      method: "post",
+      headers: {
+        "Content-Type": "application/json",
+        // 'Content-Type': 'application/x-www-form-urlencoded',
+      },
+      body: JSON.stringify({
+        email: email,
+        password: password,
+      }),
+    })
+    //   .then((res) => {
+    //     console.log(res);
+    //     return res.json();
+    //   })
+    //   .then((res) => {
+    //     console.log("LOOOOL");
+    //     console.log(res);
+    //     alert(res.msg);
+    //   });
+  };
+
   return (
     <>
       {/* Form Login */}
-      <div className="container my-1">
-        <div className="container col-xl-10 col-xxl-8 px-4 w-100">
-          <div className="row align-items-center g-lg-5 py-1 ">
-            <div className="col-lg-7 ">
-              <img src={signin} alt="" width="420" height="420" />
+      <div className="container">
+        <div className="container ">
+          <div className="row ">
+            <div className="col mt-">
+              <img src={signin} alt="" width="500" height="500" />
             </div>
-            <div className="col-md-10 mx-auto col-lg-5">
-              <h1 className="text-center fw-bold">Sign In</h1>
-              <form className="p-2 p-md-5 border rounded-3 bg-dark">
-                <div className="form-floating">
-                  <input type="email" className="form-control" id="floatingInput" placeholder="name@example.com" />
+            <div className="col justify-content-center">
+              
+              {/* input user */}
+              <form
+                className="p-4 p-md-5 border rounded-3 bg-dark w-75 geserkiri"
+                onSubmit={(e) => {
+                  handleSubmit(e);
+                }}
+              >
+                <h1 className="fw-bold text-center text-white mb-4">Sign In</h1>
+                <div className="form-floating mb-3">
+                  <input
+                    type="email"
+                    className="form-control"
+                    id="floatingInput"
+                    placeholder="name@example.com"
+                    onChange={(e) => {
+                      setEmail(e.target.value);
+                    }}
+                  />
                   <label for="floatingInput">Email address</label>
                 </div>
-                <div className="form-floating mb-2 mt-4">
-                  <input type="password" className="form-control" id="floatingPassword" placeholder="Password" />
+                <div className="form-floating mb-3">
+                  <input
+                    type="password"
+                    className="form-control"
+                    id="floatingPassword"
+                    placeholder="Password"
+                    onChange={(e) => {
+                      setPassword(e.target.value);
+                    }}
+                  />
                   <label for="floatingPassword">Password</label>
                 </div>
-                <div className="checkbox my-3 text-white">
+                <div className="checkbox mb-3 text-white">
                   <label>
                     <input type="checkbox" value="remember-me" /> Remember me
                   </label>
                 </div>
-                <button className="w-100 btn btn-lg btn-outline-success mt-2" type="submit">
+                <button className="w-100 btn btn-lg btn-outline-success" type="submit">
                   Sign In
                 </button>
-                <p className="text-center text-white pt-3">Belum memiliki akun?</p>
-                <hr className="my-1" />
-                <a className="w-100 btn btn-lg btn-outline-success pt-1" href="/regist" type="submit">
-                  Sign Up
-                </a>
+                <hr className="my-4" />
               </form>
             </div>
           </div>
@@ -43,5 +92,6 @@ function Login() {
     </>
   );
 }
+
 
 export default Login;
