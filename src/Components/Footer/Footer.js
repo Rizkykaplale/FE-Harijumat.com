@@ -4,7 +4,7 @@ import "./Footer.css";
 function Footer(props) {
   return (
     <>
-      <footer className="footer mt-5 pb-1">
+      <footer className="footer mt-5 pb-1 pt-3">
         <div className="text-center">
         <h3>Kelompok 5</h3>
         <br />
