@@ -5,6 +5,8 @@ import class2 from "../../Image/uiuxpict.jpg";
 import class3 from "../../Image/webdev-pict.jpeg";
 import class5 from "../../Image/pmpict.jpg";
 import class6 from "../../Image/mobdevpict.jpg";
+import { Link } from "react-router-dom";
+import "./Class.css";
 
 function Class(props) {
   return (
@@ -32,7 +34,7 @@ function Class(props) {
             <div className="card">
               <img src={class1} height="240" className="card-img-top" alt="" />
               <div className="card-body">
-                <h5 className="card-title">Kelas Web-Developer</h5>
+                <h5 className="card-title"><Link to={"kelas-web-dev"} className="text-decoration-none text-reset hoverclass">Kelas Web-Developer</Link></h5>
                 <p className="card-text fst-italic">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ipsum, alias dolorum reprehenderit obcaecati doloribus cum a itaque quibusdam atque.</p>
                 <p class="badge bg-danger text-wrap ms-5 mx-3">
                   Disc 50%<span className="fw-bold px-1">Rp.1.500.000</span>

@@ -1,0 +1,11 @@
+.hoverclass {
+    transition: .5s;
+}
+
+.hoverclass:hover {
+    padding: 0px 10px;
+    border-radius: 5px;
+    color: azure;
+    background-color: rgb(41, 189, 102);
+    text-decoration:underline ;
+  }

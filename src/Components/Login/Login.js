@@ -11,8 +11,8 @@ function Login() {
   };
   return (
     <>
-      {/* Form Login */}
-      <div className="container my-1">
+           {/* Form Login */}
+           <div className="container my-1">
         <div className="container col-xl-10 col-xxl-8 px-4 w-100">
           <div className="row align-items-center g-lg-5 py-1 ">
             <div className="col-lg-7 ">
@@ -58,11 +58,11 @@ function Login() {
                 <button className="w-100 btn btn-lg btn-outline-success mt-2" type="submit">
                   Sign In
                 </button>
-                <p className="text-center text-white pt-3">Belum memiliki akun?</p>
+                <p className="text-center text-white pt-3">Belum memiliki akun? <a className="text-decoration-none" href="/regist" type="submit">
+                  Daftar
+                </a></p>
                 <hr className="my-1" />
-                <a className="w-100 btn btn-lg btn-outline-success pt-1" href="/regist" type="submit">
-                  Sign Up
-                </a>
+                
               </form>
             </div>
           </div>

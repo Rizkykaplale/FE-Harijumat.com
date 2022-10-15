@@ -21,6 +21,11 @@ function Navbar() {
               </Link>
             </li>
             <li className="nav-item">
+              <Link to={"/dashboard"} className="nav-link">
+                Dashboard
+              </Link>
+            </li>
+            <li className="nav-item">
               <Link to={"/class"} className="nav-link">
                 Class
               </Link>
