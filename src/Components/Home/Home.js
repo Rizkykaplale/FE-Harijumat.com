@@ -4,9 +4,10 @@ import hero from "../../Image/herobanner.jpg";
 import logo1 from "../../Image/logo1.png";
 import logo2 from "../../Image/logo2.png";
 import logo3 from "../../Image/logo3.jpg";
-import testi1 from "../../Image/testi1.jpg";
-import testi2 from "../../Image/testi2.png";
-import testi3 from "../../Image/testi3.jpg";
+import logo4 from "../../Image/jumbotronwa.png";
+import testi1 from "../../Image/testi-1.jpg";
+import testi2 from "../../Image/testi-2.jpg";
+import testi3 from "../../Image/testi-3.jpg";
 
 function Home(props) {
   return (
@@ -32,16 +33,17 @@ function Home(props) {
           </div>
         </div>
       </div>
+      <hr />
 
       {/* Testimoni */}
-      <div className="container my-5">
-        <h1 className="text-center my-5">Apa Kata Alumni Kami?</h1>
+      <div className="container my-5 py-1 rounded">
+        <h1 className="text-center my-5 fw-bold">Apa Kata Alumni Kami?</h1>
         <div className="row row-cols-1 row-cols-md-3 g-5">
           <div className="col">
-            <div className="card">
+            <div className="card text-white bg-dark">
               <img src={testi1} height="240" className="card-img-top" alt="" />
               <div className="card-body">
-                <h5 className="card-title">Mega-chan</h5>
+                <h5 className="card-title">Roberto Carlos</h5>
                 <p className="card-text fst-italic">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ipsum, alias dolorum reprehenderit obcaecati doloribus cum a itaque quibusdam atque.</p>
                 <p className="text-end">
                   UI/UX Designer at
@@ -51,10 +53,10 @@ function Home(props) {
             </div>
           </div>
           <div className="col">
-            <div className="card">
+            <div className="card text-white bg-dark">
               <img src={testi2} height="240" className="card-img-top" alt="" />
               <div className="card-body">
-                <h5 className="card-title">Mega-chan</h5>
+                <h5 className="card-title">Lesty</h5>
                 <p className="card-text fst-italic">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ipsum, alias dolorum reprehenderit obcaecati doloribus cum a itaque quibusdam atque.</p>
                 <p className="text-end">
                   Associate Product Manager at
@@ -64,10 +66,10 @@ function Home(props) {
             </div>
           </div>
           <div className="col">
-            <div className="card">
+            <div className="card text-white bg-dark ">
               <img src={testi3} height="240" className="card-img-top" alt="" />
               <div className="card-body">
-                <h5 className="card-title">Mega-chan</h5>
+                <h5 className="card-title">Johnny Singh</h5>
                 <p className="card-text fst-italic">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ipsum, alias dolorum reprehenderit obcaecati doloribus cum a itaque quibusdam atque.</p>
                 <p className="text-end">
                   Back End Engineer at
@@ -78,13 +80,14 @@ function Home(props) {
           </div>
         </div>
       </div>
+      <hr />
 
       {/* table kenapa milih harijumat.com */}
-      <div className="container py-5">
-        <h1 className="text-center py-5">Mengapa harus harijumat.com?</h1>
+      <div className="container pb-5">
+        <h1 className="text-center py-5 fw-bold">Mengapa harus harijumat.com?</h1>
         <table className="table">
           <thead>
-            <tr className="text-center table-secondary">
+            <tr className="text-center table-dark">
               <th scope="col"></th>
               <th scope="col">harijumat.com</th>
               <th scope="col">Other Bootcamp</th>
@@ -92,43 +95,43 @@ function Home(props) {
           </thead>
           <tbody className="text-center">
             <tr>
-              <td className="table-warning">Start dari 1 Jutaan Perbulan</td>
-              <td className="table-success">
+              <td className="bg-transparent">Start dari 1 Jutaan Perbulan</td>
+              <td className="table-transparent">
                 <i className="fa-sharp fa-solid fa-circle-check"></i>
               </td>
               <td className="table-danger">Ratusan - Puluhan juta</td>
             </tr>
             <tr>
-              <td className="table-warning">Materi Lengkap Dengan harga Terjangkau</td>
-              <td className="table-success">
+              <td className="bg-transparent">Materi Lengkap Dengan harga Terjangkau</td>
+              <td className="table-transparent">
                 <i className="fa-sharp fa-solid fa-circle-check"></i>
               </td>
               <td className="table-danger">Tergantung harga yang di bayar</td>
             </tr>
             <tr>
-              <td className="table-warning">Final Project untuk Portofoliomu</td>
-              <td className="table-success">
+              <td className="bg-transparent">Final Project untuk Portofoliomu</td>
+              <td className="table-transparent">
                 <i className="fa-sharp fa-solid fa-circle-check"></i>
               </td>
               <td className="table-danger">Belum tentu ada</td>
             </tr>
             <tr>
-              <td className="table-warning">Akan mendapatkan kesempatan magang</td>
-              <td className="table-success">
+              <td className="bg-transparent">Akan mendapatkan kesempatan magang</td>
+              <td className="table-transparent">
                 <i className="fa-sharp fa-solid fa-circle-check"></i>
               </td>
               <td className="table-danger">Tidak ada</td>
             </tr>
             <tr>
-              <td className="table-warning">Bebas Konsultasi diluar jam kelas</td>
-              <td className="table-success">
+              <td className="bg-transparent">Bebas Konsultasi diluar jam kelas</td>
+              <td className="table-transparent">
                 <i className="fa-sharp fa-solid fa-circle-check"></i>
               </td>
               <td className="table-danger">Hanya pada saat jam kelas</td>
             </tr>
             <tr>
-              <td className="table-warning">Bimbingan karir hingga diterima bekerja</td>
-              <td className="table-success">
+              <td className="bg-transparent">Bimbingan karir hingga diterima bekerja</td>
+              <td className="table-transparent">
                 <i className="fa-sharp fa-solid fa-circle-check"></i>
               </td>
               <td className="table-danger">Hanya bimbingan biasa</td>
@@ -136,11 +139,12 @@ function Home(props) {
           </tbody>
         </table>
       </div>
-      
+      <hr />
+
       {/* lulusan harijumat */}
-<div className="container pt-3 mt-5">
+      <div className="container pt-3 mt-5">
         <div className="row">
-          <h1 className="mb-5 text-capitalize text-center">Lulusan harijumat.com telah bekerja di:</h1>
+          <h1 className="mb-5 text-capitalize text-center fw-bold">Lulusan harijumat.com telah bekerja di:</h1>
           <div className="col text-center m-3">
             <img src="https://www.harisenin.com/_next/image?url=https%3A%2F%2Fcdn.harisenin.com%2Fpublic%2Fassets%2Flogos%2Flogo_air-asia-2.png&w=256&q=75" alt="" />
           </div>
@@ -189,6 +193,24 @@ function Home(props) {
         </div>
       </div>
       <br />
+
+      {/* Jumbotron WA (kalo sewaktu-waktu perlu) */}
+      {/* <div className="my-5 py-5">
+        <div className="container-fluid py-3 bg-dark text-white rounded-2 ">
+          <div className="row">
+            <div className="col pt-5 ps-5"><br />
+              <h1 className="display-6 fw-bold">Masih bingung?</h1>
+              <p className=" fs-3 ">Konsultasikan tujuan karirmu dengan expert terbaik dibidangnya</p>
+              <button className="btn btn-success btn-lg" type="button">
+              <a href="https://wa.me/6282211373658/?text=Halo Admin, mau nanya dong." target="_blank" className="text-decoration-none text-white gede">WhatsApp</a>
+              </button>
+            </div>
+            <div className="col text-center">
+              <img src={logo4} alt="" width="363" height="363"/>
+            </div>
+          </div>
+        </div>
+      </div> */}
     </>
   );
 }

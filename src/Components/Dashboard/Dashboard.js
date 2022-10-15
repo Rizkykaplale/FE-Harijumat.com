@@ -1,26 +1,27 @@
-import React from 'react';
+import React from "react";
+import "./Dashboard.css"
 
 function Dashboard(props) {
-    return (
-        <>
-            <div className="container mt-3">
+  return (
+    <>
+      <div className="container mt-3">
         <h2>My Dashboard</h2>
         <br />
         {/* Nav tabs  */}
         <ul className="nav nav-tabs" role="tablist">
           <li className="nav-item">
-            <a className="nav-link active" data-bs-toggle="tab" href="#home">
-            Kelas Saya
+            <a className="nav-link active text-dark" data-bs-toggle="tab" href="#home">
+              My Class
             </a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" data-bs-toggle="tab" href="#menu1">
-            Wishlist
+            <a className="nav-link text-dark" data-bs-toggle="tab" href="#menu1">
+              Wishlist
             </a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" data-bs-toggle="tab" href="#menu2">
-            Favorite
+            <a className="nav-link text-dark" data-bs-toggle="tab" href="#menu2">
+              Favorite
             </a>
           </li>
         </ul>
@@ -29,7 +30,7 @@ function Dashboard(props) {
         <div className="tab-content">
           <div id="home" className="container tab-pane active fade">
             <br />
-            <h3>Kelas Saya</h3>
+            <h3>My Class</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
           </div>
           <div id="menu1" className="container tab-pane fade">
@@ -44,8 +45,10 @@ function Dashboard(props) {
           </div>
         </div>
       </div>
-        </>
-    );
+
+      
+    </>
+  );
 }
 
 export default Dashboard;

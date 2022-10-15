@@ -24,11 +24,12 @@ function Class(props) {
           </div>
         </div>
       </div>
+      <hr />
 
       {/* {Pilihan Kelas} */}
       <div className="container my-5">
-        <h3 className=" pt-5 text-center">Kelas kami</h3>
-        <p className="text-center pb-3">Kelas terbaik dari kami, dan miliki skill yang paling di cari industri saat ini</p>
+        <h3 className=" pt-5 text-center fw-bold">Kelas kami</h3>
+        <p className="text-center pb-3">Jelajahi kelas terbaik dari tutor terbaik dibidangnya. Miliki skill yang paling di cari industri saat ini</p>
         <div className="row row-cols-1 row-cols-md-3 g-5">
           <div className="col">
             <div className="card">

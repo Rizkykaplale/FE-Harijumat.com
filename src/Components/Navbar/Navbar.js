@@ -6,10 +6,11 @@ import "./Navbar.css";
 function Navbar() {
   return (
     <nav className="navbar navbar-expand-md navbar-dark fixed-top warna-navbar">
-      <div className="container-fluid">
-        <a className="navbar-brand" href=".">
+      <div className="container-fluid ">
+        <Link to={"/"}>
           <img src={logo} width="128" alt="" />
-        </a>
+        </Link>
+        
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
         </button>
@@ -36,14 +37,13 @@ function Navbar() {
               </Link>
             </li>
           </ul>
-          <ul className="navbar-nav">
-            <li class="btn btn-success btn-sm">
+          <ul className="navbar-nav sign-in">
+            <li class="mx-1 rounded bg-success">
               <Link to={"/login"} className="nav-link">
                 Sign In
               </Link>
             </li>
-            <h2>|</h2>
-            <li class="btn btn-secondary btn-sm ">
+            <li class="mx-1 rounded bg-primary sign-up">
               <Link to={"/regist"} className="nav-link">
                 Sign Up
               </Link>

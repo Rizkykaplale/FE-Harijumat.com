@@ -11,6 +11,7 @@ import Footer from "./Components/Footer/Footer";
 import Checkout from "./Components/Checkout/Checkout";
 import Dashboard from "./Components/Dashboard/Dashboard";
 import WatchClass from "./Components/Class/WatchClass";
+import NotFound from "./Components/NotFound";
 
 
 function App() {
@@ -28,9 +29,29 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/regist" element={<Regist />} />
           <Route path="/checkout" element={<Checkout />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </div>
       <Footer />
+    
+    
+    {/* <Navbar />
+      <br/>
+      <div className="container mt-5">
+        <Routes>
+          <Route path="/" element={<Login />} />
+          <Route path="/home" element={<Home />} />
+          <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/class" element={<Class />} />
+          <Route path="/class/:slug" element={<WatchClass />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/regist" element={<Regist />} />
+          <Route path="/checkout" element={<Checkout />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </div>
+      <Footer /> */}
     </>
   );
 }
