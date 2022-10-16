@@ -7,13 +7,11 @@ function WatchClass() {
 
   return (
     <>
-      <div className="container-fluid rounded px-5">
+      {/* kelas webdev */}
+      <div className="container rounded px-5">
         <h3 className="text-center pt-5 mb-4 fw-bold">Kelas Web-Developer</h3>
-
         <ReactPlayer url={"https://www.youtube.com/watch?v=InCaBT5OeIQ"} width={"100%"} height={"480px"} />
-
         <br />
-
         {/* Nav tabs  */}
         <ul className="nav nav-tabs" role="tablist">
           <li className="nav-item">

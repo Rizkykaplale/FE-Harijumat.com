@@ -54,7 +54,7 @@ function Class(props) {
             <div className="card">
               <img src={class2} height="240" className="card-img-top" alt="" />
               <div className="card-body">
-                <h5 className="card-title">Kelas UI/UX</h5>
+                <h5 className="card-title"><Link to={"kelas-ui-ux"} className="text-decoration-none text-reset hoverclass">Kelas UI/UX</Link></h5>
                 <p className="card-text fst-italic">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ipsum, alias dolorum reprehenderit obcaecati doloribus cum a itaque quibusdam atque.</p>
                 <p class="badge bg-danger text-wrap ms-5 mx-3">
                   Disc 50%<span className="fw-bold px-1">Rp.1.500.000</span>

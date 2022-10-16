@@ -1,6 +1,28 @@
-import React from "react";
+import React, { useState } from "react";
 
 function Checkout() {
+  // informasi pribadi
+  const [namaDepan, setNamaDepan] = useState("");
+  const [namaBelakang, setNamaBelakang] = useState("");
+  const [statusPekerjaan, setStatusPekerjaan] = useState("");
+  const [email, setEmail] = useState("");
+  const [alamat, setAlamat] = useState("");
+  const [kota, setKota] = useState("");
+  const [provinsi, setProvinsi] = useState("");
+  const [kodePos, setKodePos] = useState("");
+
+  // informasi kelas
+  const [pilihKelas, setPilihKelas] = useState("");
+  const [ekspektasiKelas, setEkspektasiKelas] = useState("");
+
+  const handleInformasiUser = (e) => {
+    e.preventDefault();
+  };
+
+  const handleTotalHarga = (e) => {
+    e.preventDefault();
+  };
+
   return (
     <>
       <div className="container">
@@ -34,7 +56,12 @@ function Checkout() {
                   <strong>1.500.000</strong>
                 </li>
               </ul>
-              <form className="card p-2">
+              <form
+                className="card p-2"
+                onChange={() => {
+                  handleTotalHarga();
+                }}
+              >
                 <div className="input-group">
                   <input type="text" className="form-control" placeholder="Promo code(optional)" />
                   <button type="submit" className="btn btn-secondary">
@@ -45,27 +72,58 @@ function Checkout() {
             </div>
             <div className="col-md-7 col-lg-8">
               <h4 className="mb-3">Informasi Pribadi</h4>
-              <form className="needs-validation" noValidate>
+              <form
+                className="needs-validation"
+                noValidate
+                onChange={(e) => {
+                  handleInformasiUser();
+                }}
+              >
                 <div className="row g-3">
                   <div className="col-sm-6">
                     <label htmlFor="firstName" className="form-label">
                       Nama Depan
                     </label>
-                    <input type="text" className="form-control" id="firstName" placeholder="John" required />
+                    <input
+                      type="text"
+                      className="form-control"
+                      id="firstName"
+                      placeholder="John"
+                      required
+                      onChange={(e) => {
+                        setNamaDepan(e.target.value);
+                      }}
+                    />
                     <div className="invalid-feedback">Valid first name is required.</div>
                   </div>
                   <div className="col-sm-6">
                     <label htmlFor="lastName" className="form-label">
                       Nama Belakang
                     </label>
-                    <input type="text" className="form-control" id="lastName" placeholder="Doe" required />
+                    <input
+                      type="text"
+                      className="form-control"
+                      id="lastName"
+                      placeholder="Doe"
+                      required
+                      onChange={(e) => {
+                        setNamaBelakang(e.target.value);
+                      }}
+                    />
                     <div className="invalid-feedback">Valid last name is required.</div>
                   </div>
                   <div className="col-md-15">
                     <label htmlFor="state" className="form-label">
                       Status Pekerjaan
                     </label>
-                    <select className="form-select" id="state" required>
+                    <select
+                      className="form-select"
+                      id="state"
+                      required
+                      onChange={(e) => {
+                        setStatusPekerjaan(e.target.value);
+                      }}
+                    >
                       <option value>Pilih Status</option>
                       <option>Belum Bekerja</option>
                       <option>Karyawan</option>
@@ -78,35 +136,80 @@ function Checkout() {
                     <label htmlFor="email" className="form-label">
                       Email <span className="text-muted"></span>
                     </label>
-                    <input type="email" className="form-control" id="email" placeholder="you@example.com" required />
+                    <input
+                      type="email"
+                      className="form-control"
+                      id="email"
+                      placeholder="you@example.com"
+                      required
+                      onChange={(e) => {
+                        setEmail(e.target.value);
+                      }}
+                    />
                     <div className="invalid-feedback">Please enter a valid email addresss.</div>
                   </div>
                   <div className="col-12">
                     <label htmlFor="address" className="form-label">
                       Alamat Lengkap
                     </label>
-                    <input type="text" className="form-control" id="address" placeholder="Jl. Manggis No.xx" required />
+                    <input
+                      type="text"
+                      className="form-control"
+                      id="address"
+                      placeholder="Jl. Manggis No.xx"
+                      required
+                      onChange={(e) => {
+                        setAlamat(e.target.value);
+                      }}
+                    />
                     <div className="invalid-feedback">Please enter your address.</div>
                   </div>
                   <div className="col-md-5">
                     <label htmlFor="Kota" className="form-label">
                       Kota/Kabupaten
                     </label>
-                    <input type="text" className="form-control" id="Kota" placeholder required />
+                    <input
+                      type="text"
+                      className="form-control"
+                      id="Kota"
+                      placeholder
+                      required
+                      onChange={(e) => {
+                        setKota(e.target.value);
+                      }}
+                    />
                     <div className="invalid-feedback">Kota required.</div>
                   </div>
                   <div className="col-md-5">
                     <label htmlFor="Provinsi" className="form-label">
                       Provinsi
                     </label>
-                    <input type="text" className="form-control" id="Provinsi" placeholder required />
+                    <input
+                      type="text"
+                      className="form-control"
+                      id="Provinsi"
+                      placeholder
+                      required
+                      onChange={(e) => {
+                        setProvinsi(e.target.value);
+                      }}
+                    />
                     <div className="invalid-feedback">Provinsi required.</div>
                   </div>
                   <div className="col-md-2">
                     <label htmlFor="Kode pos" className="form-label">
                       Kode pos
                     </label>
-                    <input type="text" className="form-control" id="Kode pos" placeholder required />
+                    <input
+                      type="text"
+                      className="form-control"
+                      id="Kode pos"
+                      placeholder
+                      required
+                      onChange={(e) => {
+                        setKodePos(e.target.value);
+                      }}
+                    />
                     <div className="invalid-feedback">Zip code required.</div>
                   </div>
                 </div>
@@ -116,7 +219,14 @@ function Checkout() {
                   <label htmlFor="state" className="form-label">
                     Kelas yang ingin diikuti
                   </label>
-                  <select className="form-select" id="state" required>
+                  <select
+                    className="form-select"
+                    id="state"
+                    required
+                    onChange={(e) => {
+                      setPilihKelas(e.target.value);
+                    }}
+                  >
                     <option value>Pilih kelas</option>
                     <option>Kelas Web Developer</option>
                     <option>Kelas Data Science</option>
@@ -130,14 +240,17 @@ function Checkout() {
                   <label htmlFor="Ekspektasi" className="form-label">
                     Ekspektasi mengikuti kelas
                   </label>
-                  <input type="text" className="form-control" id="Ekspektasi" placeholder="Saya ingin...." required />
+                  <input type="text" className="form-control" id="Ekspektasi" placeholder="Saya ingin...." required onChange={e => {
+                    setEkspektasiKelas(e.target.value)
+                  }}/>
                   <div className="invalid-feedback">Ekspektasi required.</div>
                 </div>
                 <hr className="my-4" />
                 <h4 className="mb-3">Payment</h4>
-                <h6>Nama : PT.Harijumatberkah</h6>
-                <h6>No rekening : 4801210</h6>
-                <h6>Bank BCA</h6>
+                <h6 className="py-1">
+                  Nama : PT.Harijumatberkah <br /> No rekening : 4801210 <br />
+                  Bank BCA
+                </h6>
                 <small className="text-muted">Pastikan Nomor rekening dan jumlah transfer sesuai</small>
                 <div className="row gy-3">
                   <div className="col-md-15">

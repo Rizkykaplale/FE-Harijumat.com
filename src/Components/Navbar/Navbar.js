@@ -16,34 +16,34 @@ function Navbar() {
         </button>
         <div className="collapse navbar-collapse" id="navbarCollapse">
           <ul className="navbar-nav ms-auto gap-4 px-3">
-            <li className="nav-item">
+            <li className="nav-item sorot">
               <Link to={"/"} className="nav-link">
                 Home
               </Link>
             </li>
-            <li className="nav-item">
+            <li className="nav-item sorot">
               <Link to={"/dashboard"} className="nav-link">
                 Dashboard
               </Link>
             </li>
-            <li className="nav-item">
+            <li className="nav-item sorot">
               <Link to={"/class"} className="nav-link">
                 Class
               </Link>
             </li>
-            <li className="nav-item">
+            <li className="nav-item sorot">
               <Link to={"/contact"} className="nav-link">
                 Contact Us
               </Link>
             </li>
           </ul>
-          <ul className="navbar-nav sign-in">
+          <ul className="navbar-nav sign-in-css">
             <li class="mx-1 rounded bg-success">
               <Link to={"/login"} className="nav-link">
                 Sign In
               </Link>
             </li>
-            <li class="mx-1 rounded bg-primary sign-up">
+            <li class="mx-1 rounded bg-primary sign-up-css">
               <Link to={"/regist"} className="nav-link">
                 Sign Up
               </Link>

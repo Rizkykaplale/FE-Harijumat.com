@@ -1,17 +1,25 @@
 import React from "react";
-import "./Dashboard.css"
+import "./Dashboard.css";
 
 function Dashboard(props) {
   return (
     <>
+     <h1>Halaman dashboard belom jadi</h1>
+    </>
+  );
+}
+
+export default Dashboard;
+
+ {/* Bagian Body
       <div className="container mt-3">
         <h2>My Dashboard</h2>
         <br />
-        {/* Nav tabs  */}
+        Nav tabs
         <ul className="nav nav-tabs" role="tablist">
           <li className="nav-item">
             <a className="nav-link active text-dark" data-bs-toggle="tab" href="#home">
-              My Class
+              My className
             </a>
           </li>
           <li className="nav-item">
@@ -25,12 +33,11 @@ function Dashboard(props) {
             </a>
           </li>
         </ul>
-
-        {/* Tab panes  */}
+        Tab panes
         <div className="tab-content">
           <div id="home" className="container tab-pane active fade">
             <br />
-            <h3>My Class</h3>
+            <h3>My className</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
           </div>
           <div id="menu1" className="container tab-pane fade">
@@ -44,11 +51,4 @@ function Dashboard(props) {
             <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
           </div>
         </div>
-      </div>
-
-      
-    </>
-  );
-}
-
-export default Dashboard;
+      </div> */}

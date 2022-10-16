@@ -16,22 +16,22 @@
     background-color: rgb(0, 0, 0)
   }
 
-  .nav-item:hover {
-    /* font-weight: bold;
-    transform: scale(1.10); */
+  .sorot:hover {
+    font-weight: bold;
+    transform: scale(1.10);
     background-color: green;
     border-radius: 10px;
-    transition: .3s;
+    transition: .4s;
   }
 
-  .sign-in :hover {
+  .sign-in-css :hover {
     text-decoration: underline;
     transition: .2s;
     color: green;
     background-color: white;
     border-radius: 8px;
   }
-  .sign-up :hover {
+  .sign-up-css :hover {
     text-decoration: underline;
     transition: .2s;
     color: rgb(0, 111, 221);
