@@ -1,13 +1,24 @@
 import React, { useState } from "react";
 import "./Login.css";
 import signin from "../../Image/signin.jpg";
+import { Navigate, useNavigate } from "react-router-dom";
+
 
 function Login() {
+  const navigate = useNavigate()
+  const defaultAccount = {
+    email: "admin@123",
+    password: "admin123"
+  }
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    if (email === defaultAccount.email && password === defaultAccount.password) {
+      navigate('/home')
+    }
   };
   return (
     <>
@@ -50,15 +61,10 @@ function Login() {
                   />
                   <label for="floatingPassword">Password</label>
                 </div>
-                <div className="checkbox my-3 text-white">
-                  <label>
-                    <input type="checkbox" value="remember-me" /> Remember me
-                  </label>
-                </div>
                 <button className="w-100 btn btn-lg btn-outline-success mt-2" type="submit">
                   Sign In
                 </button>
-                <p className="text-center text-white pt-3 ">Belum memiliki akun? <a className="text-decoration-none fw-bold" href="/regist" type="submit">
+                <p className="text-center text-white pt-3 ">Belum punya akun ? <a className="text-decoration-none fw-bold" href="/regist" type="submit">
                   Daftar
                 </a></p>
                 <hr className="my-1" />

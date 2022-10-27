@@ -1,16 +1,18 @@
 import React from "react";
 import contactUs from "../../Image/contact-us.jpg";
+import Footer from "../Footer/Footer";
+import Navbar from "../Navbar/Navbar";
 function Contact(props) {
   return (
     <>
+    <Navbar/>
       <section>
         <div className="container py-5">
-          <div className="card shadow">
+          <div className="card">
             <div className="card-body">
               <div className="row">
                 <div className="col-md-6">
-                  <h3 className="text-center">Contact Us</h3>
-                  <hr />
+                  <h3 className="text-center mb-4">Contact Us</h3>
                   <div className="form-group">
                     <label className="mb-1">User Name</label>
                     <input type="text" className="form-control" placeholder="Enter your username" />
@@ -37,6 +39,7 @@ function Contact(props) {
           </div>
         </div>
       </section>
+    <Footer/>
     </>
   );
 }

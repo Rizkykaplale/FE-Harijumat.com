@@ -8,10 +8,13 @@ import logo4 from "../../Image/jumbotronwa.png";
 import testi1 from "../../Image/testi-1.jpg";
 import testi2 from "../../Image/testi-2.jpg";
 import testi3 from "../../Image/testi-3.jpg";
+import Navbar from "../Navbar/Navbar";
+import Footer from "../Footer/Footer";
 
 function Home(props) {
   return (
     <>
+    <Navbar/>
       {/* Hero Banner */}
       <div className="container col-xxl-8 px-4 pb-5">
         <div className="row flex-lg-row-reverse align-items-center g-5 py-1">
@@ -40,7 +43,7 @@ function Home(props) {
         <h1 className="text-center my-5 fw-bold">Apa Kata Alumni Kami?</h1>
         <div className="row row-cols-1 row-cols-md-3 g-5">
           <div className="col">
-            <div className="card text-white bg-dark">
+            <div className="card text-black bg-white">
               <img src={testi1} height="240" className="card-img-top" alt="" />
               <div className="card-body">
                 <h5 className="card-title">Roberto Carlos</h5>
@@ -53,7 +56,7 @@ function Home(props) {
             </div>
           </div>
           <div className="col">
-            <div className="card text-white bg-dark">
+            <div className="card text-black bg-white">
               <img src={testi2} height="240" className="card-img-top" alt="" />
               <div className="card-body">
                 <h5 className="card-title">Lesty</h5>
@@ -66,7 +69,7 @@ function Home(props) {
             </div>
           </div>
           <div className="col">
-            <div className="card text-white bg-dark ">
+            <div className="card text-black bg-white ">
               <img src={testi3} height="240" className="card-img-top" alt="" />
               <div className="card-body">
                 <h5 className="card-title">Johnny Singh</h5>
@@ -87,7 +90,7 @@ function Home(props) {
         <h1 className="text-center py-5 fw-bold">Mengapa harus harijumat.com?</h1>
         <table className="table">
           <thead>
-            <tr className="text-center table-dark">
+            <tr className="text-center table-secondary fs-4">
               <th scope="col"></th>
               <th scope="col">harijumat.com</th>
               <th scope="col">Other Bootcamp</th>
@@ -96,42 +99,42 @@ function Home(props) {
           <tbody className="text-center">
             <tr>
               <td className="bg-transparent">Start dari 1 Jutaan Perbulan</td>
-              <td className="table-transparent">
+              <td className="table-success">
                 <i className="fa-sharp fa-solid fa-circle-check"></i>
               </td>
               <td className="table-danger">Ratusan - Puluhan juta</td>
             </tr>
             <tr>
               <td className="bg-transparent">Materi Lengkap Dengan harga Terjangkau</td>
-              <td className="table-transparent">
+              <td className="table-success">
                 <i className="fa-sharp fa-solid fa-circle-check"></i>
               </td>
               <td className="table-danger">Tergantung harga yang di bayar</td>
             </tr>
             <tr>
               <td className="bg-transparent">Final Project untuk Portofoliomu</td>
-              <td className="table-transparent">
+              <td className="table-success">
                 <i className="fa-sharp fa-solid fa-circle-check"></i>
               </td>
               <td className="table-danger">Belum tentu ada</td>
             </tr>
             <tr>
               <td className="bg-transparent">Akan mendapatkan kesempatan magang</td>
-              <td className="table-transparent">
+              <td className="table-success">
                 <i className="fa-sharp fa-solid fa-circle-check"></i>
               </td>
               <td className="table-danger">Tidak ada</td>
             </tr>
             <tr>
               <td className="bg-transparent">Bebas Konsultasi diluar jam kelas</td>
-              <td className="table-transparent">
+              <td className="table-success">
                 <i className="fa-sharp fa-solid fa-circle-check"></i>
               </td>
               <td className="table-danger">Hanya pada saat jam kelas</td>
             </tr>
             <tr>
               <td className="bg-transparent">Bimbingan karir hingga diterima bekerja</td>
-              <td className="table-transparent">
+              <td className="table-success">
                 <i className="fa-sharp fa-solid fa-circle-check"></i>
               </td>
               <td className="table-danger">Hanya bimbingan biasa</td>
@@ -211,6 +214,7 @@ function Home(props) {
           </div>
         </div>
       </div> */}
+      <Footer/>
     </>
   );
 }

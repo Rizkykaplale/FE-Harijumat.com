@@ -4,7 +4,9 @@ import "./Footer.css";
 function Footer() {
   return (
     <>
-      <footer className="container-fluid mt-5 pb-1 pt-3">
+    <hr />
+    <div className="container position-absolute"></div>
+      <footer className="container-fluid bg-light text-black mt-5 pb-1 pt-3">
         <div className="text-center">
         <h3>Kelompok 5</h3>
         <br />

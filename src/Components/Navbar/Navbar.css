@@ -17,24 +17,18 @@
   }
 
   .sorot:hover {
-    font-weight: bold;
-    transform: scale(1.10);
+    transform: scale(1);
     background-color: green;
     border-radius: 10px;
     transition: .4s;
   }
 
-  .sign-in-css :hover {
-    text-decoration: underline;
-    transition: .2s;
-    color: green;
-    background-color: white;
-    border-radius: 8px;
+  .logout {
+    background-color: rgb(213, 64, 0);
+    border-radius: 10px;
   }
-  .sign-up-css :hover {
-    text-decoration: underline;
-    transition: .2s;
-    color: rgb(0, 111, 221);
-    background-color: white;
-    border-radius: 8px;
+
+  .logout:hover {
+    background-color: rgb(171, 0, 0);
+    transition: .7s;
   }
