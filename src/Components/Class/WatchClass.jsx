@@ -3,18 +3,28 @@ import { useParams } from "react-router-dom";
 import ReactPlayer from "react-player";
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Footer/Footer";
-
+import data from "./Data";
 
 function WatchClass(props) {
   const urlParams = useParams();
+  let tampungUrl = ''
+  console.log(urlParams.slug)
 
+
+  data.productClass.forEach((item) => {
+    if (urlParams.slug == item.urlPath ) {
+      tampungUrl = item.urlVideo
+    }
+  })
+
+  console.log(tampungUrl)
   return (
     <>
     <Navbar/>
       {/* kelas webdev */}
       <div className="container rounded px-5">
         <h3 className="text-center pt-3 mb-4 fw-bold">{props.title}</h3>
-        <ReactPlayer url={props.urlVideo} width={"100%"} height={"480px"} />
+        <ReactPlayer url={tampungUrl} width={"100%"} height={"480px"} />
         <br />
         
         

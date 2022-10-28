@@ -24,7 +24,7 @@ const data = {
             desc: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique rerum, reprehenderit ducimus, mollitia molestiae fuga accusamus illo aliquam dolorem ipsa commodi architecto adipisci amet, quaerat explicabo? Ut culpa ad minima.',
             price: 'Gratis',
             urlPath: 'kelas-ui-ux',
-            urlVideo: 'https://www.youtube.com/watch?v=OUzaUJ3gEug'
+            urlVideo: 'https://www.youtube.com/watch?v=dS44jZyj5gU'
         },
         {
             id: 3,
@@ -42,7 +42,7 @@ const data = {
             desc: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique rerum, reprehenderit ducimus, mollitia molestiae fuga accusamus illo aliquam dolorem ipsa commodi architecto adipisci amet, quaerat explicabo? Ut culpa ad minima.',
             price: 'Gratis',
             urlPath: 'kelas-project-manager',
-            urlVideo: 'https://www.youtube.com/watch?v=OUzaUJ3gEug'
+            urlVideo: 'https://www.youtube.com/watch?v=dS44jZyj5gU'
         },
         {
             id: 5,
