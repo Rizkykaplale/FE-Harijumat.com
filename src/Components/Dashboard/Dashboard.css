@@ -56,3 +56,7 @@
       .fontkecil {
         font-size: 10px;
       }
+
+      .backgroundDashboard {
+        background-color: rgba(24,203,139, .7);
+      }

@@ -10,21 +10,21 @@ function Dashboard() {
     <>
       <Navbar />
       {/* Bagian Body */}
-      <div className="container">
+      <div className="container p-5">
         <h2>My Dashboard</h2>
         <br />
-        <button>
-          <Link to={"/dashboard/profile"} className="mx-2 text-decoration-none text-black border-0">
+        <button className="btn btn-success mx-1 border-dark mb-2">
+          <Link to={"/dashboard/profile"} className="mx-2 text-decoration-none text-white border-0">
             Profile
           </Link>
         </button>
-        <button>
-          <Link to={"/dashboard/favorite"} className="mx-2 text-decoration-none text-black">
+        <button className="btn btn-success mx-1 border-dark mb-2">
+          <Link to={"/dashboard/favorite"} className="mx-2 text-decoration-none text-white">
             Favorite
           </Link>
         </button>
-        <button>
-          <Link to={"/dashboard/changepassword"} className="mx-2 text-decoration-none text-black">
+        <button className="btn btn-success mx-1 border-dark mb-2">
+          <Link to={"/dashboard/changepassword"} className="mx-2 text-decoration-none text-white">
             Change Password
           </Link>
         </button>

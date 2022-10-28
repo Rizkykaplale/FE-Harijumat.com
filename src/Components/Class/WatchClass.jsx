@@ -4,6 +4,7 @@ import ReactPlayer from "react-player";
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Footer/Footer";
 
+
 function WatchClass(props) {
   const urlParams = useParams();
 
@@ -12,14 +13,13 @@ function WatchClass(props) {
     <Navbar/>
       {/* kelas webdev */}
       <div className="container rounded px-5">
-        <h3 className="text-center pt-3 mb-4 fw-bold">Kelas Web-Developer</h3>
+        <h3 className="text-center pt-3 mb-4 fw-bold">{props.title}</h3>
         <ReactPlayer url={props.urlVideo} width={"100%"} height={"480px"} />
         <br />
         
         
-        {/* 
         {/* Nav tabs  */}
-        <ul className="nav nav-tabs" role="tablist">
+        {/* <ul className="nav nav-tabs" role="tablist">
           <li className="nav-item">
             <a className="nav-link text-success" data-bs-toggle="tab" href="#home">
               Prerequisite
@@ -30,10 +30,10 @@ function WatchClass(props) {
               Tools
             </a>
           </li>
-        </ul>
+        </ul> */}
 
         {/* Tab panes  */}
-        <div className="tab-content">
+        {/* <div className="tab-content">
           <div id="home" className="container tab-pane active fade">
             <br />
             <h3>Prerequisite</h3>
@@ -58,8 +58,8 @@ function WatchClass(props) {
               <li>MongoDB</li>
             </ul>
           </div>
-        </div>
-      </div>
+        </div>*/}
+      </div> 
       <Footer/>
     </>
   );

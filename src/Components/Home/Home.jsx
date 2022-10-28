@@ -14,9 +14,9 @@ import Footer from "../Footer/Footer";
 function Home(props) {
   return (
     <>
-    <Navbar/>
+      <Navbar />
       {/* Hero Banner */}
-      <div className="container col-xxl-8 px-4 pb-5">
+      <div className="container px-4 pb-5">
         <div className="row flex-lg-row-reverse align-items-center g-5 py-1">
           <div className="col-10 col-sm-8 col-lg-6">
             <img src={hero} className="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy" />
@@ -36,11 +36,11 @@ function Home(props) {
           </div>
         </div>
       </div>
-      <hr />
+  
 
       {/* Testimoni */}
-      <div className="container my-5 py-1 rounded">
-        <h1 className="text-center my-5 fw-bold">Apa Kata Alumni Kami?</h1>
+      <div className="container my-5 p-5 rounded shadow">
+        <h1 className="text-center my-3 fw-bold">Apa Kata Alumni Kami?</h1>
         <div className="row row-cols-1 row-cols-md-3 g-5">
           <div className="col">
             <div className="card text-black bg-white">
@@ -83,69 +83,51 @@ function Home(props) {
           </div>
         </div>
       </div>
-      <hr />
+
 
       {/* table kenapa milih harijumat.com */}
-      <div className="container pb-5">
+      <div className="container pb-5 shadow">
         <h1 className="text-center py-5 fw-bold">Mengapa harus harijumat.com?</h1>
         <table className="table">
           <thead>
             <tr className="text-center table-secondary fs-4">
-              <th scope="col"></th>
               <th scope="col">harijumat.com</th>
               <th scope="col">Other Bootcamp</th>
             </tr>
           </thead>
           <tbody className="text-center">
             <tr>
-              <td className="bg-transparent">Start dari 1 Jutaan Perbulan</td>
-              <td className="table-success">
-                <i className="fa-sharp fa-solid fa-circle-check"></i>
-              </td>
+              <td className="table-success">GRATIS</td>
               <td className="table-danger">Ratusan - Puluhan juta</td>
             </tr>
             <tr>
-              <td className="bg-transparent">Materi Lengkap Dengan harga Terjangkau</td>
-              <td className="table-success">
-                <i className="fa-sharp fa-solid fa-circle-check"></i>
-              </td>
+              <td className="table-success">Materi super lengkap</td>
               <td className="table-danger">Tergantung harga yang di bayar</td>
             </tr>
             <tr>
-              <td className="bg-transparent">Final Project untuk Portofoliomu</td>
-              <td className="table-success">
-                <i className="fa-sharp fa-solid fa-circle-check"></i>
-              </td>
+              <td className="table-success">Final Project untuk Portofoliomu</td>
               <td className="table-danger">Belum tentu ada</td>
             </tr>
             <tr>
-              <td className="bg-transparent">Akan mendapatkan kesempatan magang</td>
-              <td className="table-success">
-                <i className="fa-sharp fa-solid fa-circle-check"></i>
-              </td>
+              <td className="table-success">Akan mendapatkan kesempatan magang</td>
               <td className="table-danger">Tidak ada</td>
             </tr>
             <tr>
-              <td className="bg-transparent">Bebas Konsultasi diluar jam kelas</td>
-              <td className="table-success">
-                <i className="fa-sharp fa-solid fa-circle-check"></i>
-              </td>
+              <td className="table-success">Bebas Konsultasi diluar jam kelas</td>
               <td className="table-danger">Hanya pada saat jam kelas</td>
             </tr>
             <tr>
-              <td className="bg-transparent">Bimbingan karir hingga diterima bekerja</td>
-              <td className="table-success">
-                <i className="fa-sharp fa-solid fa-circle-check"></i>
-              </td>
+              <td className="table-success">Bimbingan karir hingga diterima bekerja</td>
               <td className="table-danger">Hanya bimbingan biasa</td>
             </tr>
           </tbody>
         </table>
       </div>
-      <hr />
+      <br />
+
 
       {/* lulusan harijumat */}
-      <div className="container pt-3 mt-5">
+      <div className="container pt-3 mt-5 shadow">
         <div className="row">
           <h1 className="mb-5 text-capitalize text-center fw-bold">Lulusan harijumat.com telah bekerja di:</h1>
           <div className="col text-center m-3">
@@ -196,14 +178,90 @@ function Home(props) {
         </div>
       </div>
       <br />
+      <br />
+
+
+      {/* FAQ */}
+
+      <div className="container mt-5 py-5 shadow">
+        <div className="row">
+          <div className="col">
+            <h1 className="fw-bold mb-3 ms-5">F A Q</h1>
+          </div>
+          <div className="col-9">
+            <div id="accordion">
+              <div class="card">
+                <div class="card-header bg-success bg-opacity-50">
+                  <a class="btn text-black fw-bold" data-bs-toggle="collapse" href="#collapseOne">
+                  Bagaimana cara mendaftarkan akun di harijumat.com?
+                  </a>
+                </div>
+                <div id="collapseOne" class="collapse show" data-bs-parent="#accordion">
+                  <div class="card-body text-black bg-secondary bg-opacity-25">
+                  Kamu perlu mengunjungi website harijumat.com terlebih dahulu kemudian pilih tombol <b>“Daftar“</b> di pojok kanan atas. Agar lebih mudah, kamu juga dapat mendaftar dengan akun Google yang kamu miliki. Setelah itu kamu akan masuk ke page untuk mengisi data yang diperlukan. Jika data sudah terisi, tekan tombol <b>“Daftar Sekarang”</b> . Kamu akan diarahkan untuk melakukan verifikasi melalui email. Setelah verifikasi berhasil, Selamat! Kamu telah menjadi bagian dari Harisenin.com.
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header bg-success bg-opacity-50">
+                  <a class="collapsed btn text-black fw-bold" data-bs-toggle="collapse" href="#collapseTwo">
+                  Bagaimana cara log in akun harijumat.com?
+                  </a>
+                </div>
+                <div id="collapseTwo" class="collapse" data-bs-parent="#accordion">
+                  <div class="card-body text-black bg-secondary bg-opacity-25">
+                  Kamu perlu mengunjungi website Harisenin.com terlebih dahulu kemudian pilih tombol <b>“Masuk“</b> di pojok kanan atas. Setelah itu, Kamu bisa log in melalui google atau dengan langsung memasukan email dan kata sandi yang sudah kamu daftarkan sebelumnya ke website Harisenin.com.
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header bg-success bg-opacity-50">
+                  <a class="collapsed btn text-black fw-bold" data-bs-toggle="collapse" href="#collapseThree">
+                  Bagaimana Cara Keluar (logout) dari harijumat.com?
+                  </a>
+                </div>
+                <div id="collapseThree" class="collapse" data-bs-parent="#accordion">
+                  <div class="card-body text-black bg-secondary bg-opacity-25">
+                   Yaelah bang tinggal log out aja itu dipojok kanan atas kan tombolnya gede banget masa masih picek aja sih lu
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header bg-success bg-opacity-50">
+                  <a class="collapsed btn text-black fw-bold" data-bs-toggle="collapse" href="#collapseFour">
+                  Bagaimana jika akun saya dinonaktifkan?
+                  </a>
+                </div>
+                <div id="collapseFour" class="collapse" data-bs-parent="#accordion">
+                  <div class="card-body text-black bg-secondary bg-opacity-25">
+               Makanya bang jangan bandel. Lu jadi orang cari perkara aja buset. Muhasabah diri bang kiamat udah deket.
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header bg-success bg-opacity-50">
+                  <a class="collapsed btn text-black fw-bold" data-bs-toggle="collapse" href="#collapseFive">
+                  Apakah biodata saya di akun Harisenin.com terjamin kerahasiaannya?
+                  </a>
+                </div>
+                <div id="collapseFive" class="collapse" data-bs-parent="#accordion">
+                  <div class="card-body text-black bg-secondary bg-opacity-25">
+            Ohhh engga dong. Kita jual data-data lu ke pinjol ama admin judi slot hahahahha sukurin
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
       {/* Jumbotron WA (kalo sewaktu-waktu perlu) */}
-      {/* <div className="my-5 py-5">
-        <div className="container-fluid py-3 bg-dark text-white rounded-2 ">
+      <div className="container my-5 py-5 shadow">
+        <div className="container-fluid py-3 bg-light text-black rounded-2 ">
           <div className="row">
             <div className="col pt-5 ps-5"><br />
               <h1 className="display-6 fw-bold">Masih bingung?</h1>
-              <p className=" fs-3 ">Konsultasikan tujuan karirmu dengan expert terbaik dibidangnya</p>
+              <p className=" fs-3 ">Konsultasikan tujuan karirmu dengan expert terbaik kami</p>
               <button className="btn btn-success btn-lg" type="button">
               <a href="https://wa.me/6282211373658/?text=Halo Admin, mau nanya dong." target="_blank" className="text-decoration-none text-white gede">WhatsApp</a>
               </button>
@@ -213,8 +271,8 @@ function Home(props) {
             </div>
           </div>
         </div>
-      </div> */}
-      <Footer/>
+      </div>
+      <Footer />
     </>
   );
 }

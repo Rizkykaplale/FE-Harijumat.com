@@ -1,15 +1,13 @@
 import React from "react";
+import { CartProvider } from "react-use-cart";
+import ClassFavorite from "../Class/ClassFavorite";
 
 function FavDashb(props) {
-    const favoriteClass = []
-
-    const addFavorite = (e) => {
-        e.preventDefault()
-        favoriteClass.push()
-    }
   return (
     <div>
-      <h1>ini page FavDashb</h1>
+      <CartProvider>
+        <ClassFavorite />
+      </CartProvider>
     </div>
   );
 }
