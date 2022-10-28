@@ -1,25 +1,44 @@
 import React, { useState } from "react";
 import "./Login.css";
 import signin from "../../Image/signin.jpg";
-import { Navigate, useNavigate } from "react-router-dom";
+import {  useNavigate } from "react-router-dom";
+import Axios from "axios";
 
 
 function Login() {
-  const navigate = useNavigate()
-  const defaultAccount = {
-    email: "admin@123",
-    password: "admin123"
-  }
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+  // const navigate = useNavigate()
+  // const defaultAccount = {
+  //   email: "admin@123",
+  //   password: "admin123"
+  // }
+  // const [email, setEmail] = useState("");
+  // const [password, setPassword] = useState("");
 
-  const handleSubmit = (e) => {
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+
+  //   if (email === defaultAccount.email && password === defaultAccount.password) {
+  //     navigate('/home')
+  //   }
+  // };
+  const [emailLog, setEmailLog] = useState("");
+  const [passwordLog, setPasswordLog] = useState("");
+  const [msg, setMsg] = useState("");
+  const navigate = useNavigate();
+
+  const login = async (e) => {
     e.preventDefault();
-
-    if (email === defaultAccount.email && password === defaultAccount.password) {
-      navigate('/home')
+    try {
+      await Axios.post("http://localhost:8090/login", {
+        email: emailLog,
+        password: passwordLog,
+      });
+      navigate("/home");
+    } catch (error) {
+      setMsg(error.msg);
     }
   };
+
   return (
     <>
            {/* Form Login */}
@@ -31,11 +50,10 @@ function Login() {
             </div>
             <div className="col-md-10 mx-auto col-lg-5">
               <h1 className="text-center fw-bold">Sign In</h1>
+              <p>{msg}</p>
               <form
                 className="p-2 p-md-5 border rounded-3 bg-dark"
-                onSubmit={(e) => {
-                  handleSubmit(e);
-                }}
+                onSubmit={login}
               >
                 <div className="form-floating">
                   <input
@@ -44,7 +62,7 @@ function Login() {
                     id="floatingInput"
                     placeholder="name@example.com"
                     onChange={(e) => {
-                      setEmail(e.target.value);
+                      setEmailLog(e.target.value);
                     }}
                   />
                   <label for="floatingInput">Email address</label>
@@ -56,7 +74,7 @@ function Login() {
                     id="floatingPassword"
                     placeholder="Password"
                     onChange={(e) => {
-                      setPassword(e.target.value);
+                      setPasswordLog(e.target.value);
                     }}
                   />
                   <label for="floatingPassword">Password</label>

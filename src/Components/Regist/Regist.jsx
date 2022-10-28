@@ -1,17 +1,33 @@
 import React, { useState } from "react";
 import "./Regist.css";
 import signup from "../../Image/signup.jpg";
+import Axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 function Regist(props) {
-  const [firstName, setFirstName] = useState("");
-  const [lastName, setLastName] = useState("");
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+  const [firstNameReg, setFirstNameReg] = useState("");
+  const [lastNameReg, setLastNameReg] = useState("");
+  const [emailReg, setEmailReg] = useState("");
+  const [passwordReg, setPasswordReg] = useState("");
+  const navigate = useNavigate();
+  const [msg, setMsg] = useState("");
 
-  const handleSubmit = (e) => {
-    e.preventDefault()
+  const registers = async (e) => {
+    e.preventDefault();
+
+    try {
+      await Axios.post("http://localhost:8090/register", {
+        firstName: firstNameReg,
+        lastName: lastNameReg,
+        email: emailReg,
+        password: passwordReg,
+      });
+      navigate("/login");
+    } catch (error) {
+      setMsg(error.response.data.msg);
+    }
   };
-  
+
   return (
     <>
       <div className="container">
@@ -22,11 +38,10 @@ function Regist(props) {
             </div>
             <div className="col-md-10 mx-auto col-lg-5">
               <h1 className="text-center fw-bold">Sign Up</h1>
+              <p>{msg}</p>
               <form
                 className="p-4 p-md-5 border rounded-3 bg-dark"
-                onSubmit={(e) => {
-                  handleSubmit(e);
-                }}
+                onSubmit={registers}
               >
                 <div className="form-floating mb-3">
                   <input
@@ -35,7 +50,7 @@ function Regist(props) {
                     id="floatingPassword"
                     placeholder="First Name"
                     onChange={(e) => {
-                      setFirstName(e.target.value);
+                      setFirstNameReg(e.target.value);
                     }}
                   />
                   <label>First Name</label>
@@ -47,7 +62,7 @@ function Regist(props) {
                     id="floatinglname"
                     placeholder="Last Name"
                     onChange={(e) => {
-                      setLastName(e.target.value);
+                      setLastNameReg(e.target.value);
                     }}
                   />
                   <label>Last Name</label>
@@ -59,7 +74,7 @@ function Regist(props) {
                     id="floatingInput"
                     placeholder="name@example.com"
                     onChange={(e) => {
-                      setEmail(e.target.value);
+                      setEmailReg(e.target.value);
                     }}
                   />
                   <label>Email address</label>
@@ -71,7 +86,7 @@ function Regist(props) {
                     id="floatingPassword"
                     placeholder="Password"
                     onChange={(e) => {
-                      setPassword(e.target.value);
+                      setPasswordReg(e.target.value);
                     }}
                   />
                   <label>Password</label>
@@ -81,7 +96,10 @@ function Regist(props) {
                     <input type="checkbox" value="remember-me" /> Remember me
                   </label>
                 </div>
-                <button className="w-100 btn btn-lg btn-outline-success" type="submit" onClick={(e) => handleSubmit(e)}>
+                <button
+                  className="w-100 btn btn-lg btn-outline-success"
+                  type="submit"
+                >
                   Sign Up
                 </button>
                 <hr className="my-4" />
