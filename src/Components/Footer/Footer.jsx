@@ -18,13 +18,8 @@ function Footer() {
               </a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link px-2 text-success">
-                FAQs
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link px-2 text-success">
-                About
+              <a href="/contact" class="nav-link px-2 text-success">
+                Contact Us
               </a>
             </li>
           </ul>

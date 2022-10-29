@@ -15,7 +15,9 @@ function ClassItem(props) {
             <h5 class="card-title">{props.title}</h5>
             <p class="card-text">{props.desc}</p>
             <h5 class="card-title">$ {props.price}</h5>
-            <button class="btn btn-outline-danger" onClick={() => addItem(props.item)}>
+            <button class="btn btn-outline-danger" onClick={() => 
+                addItem(props.item) && <div class="modal-dialog modal-sm">success</div>
+            }>
               <i class="fa-solid fa-heart"></i>
             </button>
             <button class="btn btn-outline-success me-5" onClick={() => {

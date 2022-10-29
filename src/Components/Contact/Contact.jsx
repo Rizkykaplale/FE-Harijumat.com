@@ -2,43 +2,28 @@ import React from "react";
 import contactUs from "../../Image/contact-us.jpg";
 import Footer from "../Footer/Footer";
 import Navbar from "../Navbar/Navbar";
+import logo from "../../Image/jumbotronwa.png";
 function Contact(props) {
   return (
     <>
     <Navbar/>
-      <section>
-        <div className="container py-5">
-          <div className="card">
-            <div className="card-body">
-              <div className="row">
-                <div className="col-md-6">
-                  <h3 className="text-center mb-4">Contact Us</h3>
-                  <div className="form-group">
-                    <label className="mb-1">User Name</label>
-                    <input type="text" className="form-control" placeholder="Enter your username" />
-                  </div>
-                  <div className="form-group py-3">
-                    <label className="mb-1">Phone Number</label>
-                    <input type="text" className="form-control" placeholder="081234567890" />
-                  </div>
-                  <div className="form-group">
-                    <label className="mb-1">Message</label>
-                    <textarea name="" id="" cols="3" className="form-control" placeholder="Type your problem ..."></textarea>
-                  </div>
-                  <div className="form-group pt-3">
-                    <button type="button" className="btn btn-success shadow w-100">
-                      Submit
-                    </button>
-                  </div>
-                </div>
-                <div className="col-md-6 border-start text-center">
-                  <img src={contactUs} alt="" width="420" height="420" />
-                </div>
-              </div>
+      {/* Jumbotron WA (kalo sewaktu-waktu perlu) */}
+      <div className="container my-5 py-5 shadow">
+        <div className="container-fluid py-3 bg-light text-black rounded-2 ">
+          <div className="row">
+            <div className="col pt-5 ps-5"><br />
+              <h1 className="display-6 fw-bold">Masih bingung?</h1>
+              <p className=" fs-3 ">Konsultasikan tujuan karirmu dengan expert terbaik kami</p>
+              <button className="btn btn-success btn-lg" type="button">
+              <a href="https://wa.me/6282211373658/?text=Halo Admin, mau nanya dong." target="_blank" className="text-decoration-none text-white gede">WhatsApp</a>
+              </button>
+            </div>
+            <div className="col text-center">
+              <img src={logo} alt="" width="363" height="363"/>
             </div>
           </div>
         </div>
-      </section>
+      </div>
     <Footer/>
     </>
   );

@@ -23,11 +23,11 @@ function Dashboard() {
             Favorite
           </Link>
         </button>
-        <button className="btn btn-success mx-1 border-dark mb-2">
+        {/* <button className="btn btn-success mx-1 border-dark mb-2">
           <Link to={"/dashboard/changepassword"} className="mx-2 text-decoration-none text-white">
             Change Password
           </Link>
-        </button>
+        </button> */}
         <Outlet />
       </div>
     </>

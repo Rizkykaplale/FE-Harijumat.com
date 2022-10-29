@@ -21,7 +21,7 @@ function Navbar() {
               </Link>
             </li>
             <li className="nav-item sorot">
-              <Link to={"/dashboard"} className="nav-link">
+              <Link to={"/dashboard/profile"} className="nav-link">
                 Dashboard
               </Link>
             </li>

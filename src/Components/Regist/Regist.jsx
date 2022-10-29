@@ -14,9 +14,16 @@ function Regist(props) {
 
   const registers = async (e) => {
     e.preventDefault();
-
+    console.log({
+      firstName: firstNameReg,
+      lastName: lastNameReg,
+      email: emailReg,
+      password: passwordReg,
+    })
     try {
-      await Axios.post("http://localhost:8090/register", {
+      await Axios.post("http://localhost:8090/register", {headers: {
+        'Content-Type': 'application/json',
+    },}, {
         firstName: firstNameReg,
         lastName: lastNameReg,
         email: emailReg,
@@ -25,6 +32,7 @@ function Regist(props) {
       navigate("/login");
     } catch (error) {
       setMsg(error.response.data.msg);
+      // console.log(error);
     }
   };
 

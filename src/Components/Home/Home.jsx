@@ -4,7 +4,6 @@ import hero from "../../Image/herobanner.jpg";
 import logo1 from "../../Image/logo1.png";
 import logo2 from "../../Image/logo2.png";
 import logo3 from "../../Image/logo3.jpg";
-import logo4 from "../../Image/jumbotronwa.png";
 import testi1 from "../../Image/testi-1.jpg";
 import testi2 from "../../Image/testi-2.jpg";
 import testi3 from "../../Image/testi-3.jpg";
@@ -127,7 +126,7 @@ function Home(props) {
 
 
       {/* lulusan harijumat */}
-      <div className="container pt-3 mt-5 shadow">
+      <div className="container py-5 mt-5 shadow">
         <div className="row">
           <h1 className="mb-5 text-capitalize text-center fw-bold">Lulusan harijumat.com telah bekerja di:</h1>
           <div className="col text-center m-3">
@@ -222,7 +221,7 @@ function Home(props) {
                 </div>
                 <div id="collapseThree" class="collapse" data-bs-parent="#accordion">
                   <div class="card-body text-black bg-secondary bg-opacity-25">
-                   Yaelah bang tinggal log out aja itu dipojok kanan atas kan tombolnya gede banget masa masih picek aja sih lu
+                   Yaelah bang tinggal log out aja itu dipojok kanan atas kan tombolnya gede banget masa masih galiat juga sih lu bang
                   </div>
                 </div>
               </div>
@@ -255,23 +254,6 @@ function Home(props) {
         </div>
       </div>
 
-      {/* Jumbotron WA (kalo sewaktu-waktu perlu) */}
-      <div className="container my-5 py-5 shadow">
-        <div className="container-fluid py-3 bg-light text-black rounded-2 ">
-          <div className="row">
-            <div className="col pt-5 ps-5"><br />
-              <h1 className="display-6 fw-bold">Masih bingung?</h1>
-              <p className=" fs-3 ">Konsultasikan tujuan karirmu dengan expert terbaik kami</p>
-              <button className="btn btn-success btn-lg" type="button">
-              <a href="https://wa.me/6282211373658/?text=Halo Admin, mau nanya dong." target="_blank" className="text-decoration-none text-white gede">WhatsApp</a>
-              </button>
-            </div>
-            <div className="col text-center">
-              <img src={logo4} alt="" width="363" height="363"/>
-            </div>
-          </div>
-        </div>
-      </div>
       <Footer />
     </>
   );
